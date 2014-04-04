@@ -1,0 +1,538 @@
+2014/03/24 17:09:29 [error] [php] include(LoginWidget.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/sst/framework/web/CWidgetFactory.php(146): import()
+#1 /var/www/sst/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /var/www/sst/framework/web/CBaseController.php(172): SiteController->createWidget()
+#3 /var/www/sst/themes/flattab/views/site/index.php(11): SiteController->widget()
+#4 /var/www/sst/framework/web/CBaseController.php(126): require()
+#5 /var/www/sst/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sst/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sst/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sst/protected/controllers/SiteController.php(32): SiteController->render()
+#9 /var/www/sst/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/
+in /var/www/sst/themes/flattab/views/site/index.php (11)
+in /var/www/sst/protected/controllers/SiteController.php (32)
+in /var/www/sst/index.php (13)
+2014/03/24 17:10:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiiauth".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('yiiauth')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/yiiauth
+---
+2014/03/24 17:38:40 [error] [php] require_once(/hybridauth/Hybrid/Auth.php): failed to open stream: No such file or directory (/var/www/sst/protected/modules/yiiauth/components/Yiiauth.php:4)
+Stack trace:
+#0 unknown(0): DefaultController->actionauthenticatewith()
+#1 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/sst/framework/web/CController.php(286): DefaultController->runAction()
+#5 /var/www/sst/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#6 /var/www/sst/framework/web/CWebApplication.php(282): DefaultController->run()
+#7 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/yiiauth/default/authenticatewith/provider/google
+in /var/www/sst/protected/modules/yiiauth/components/Yiiauth.php (4)
+in /var/www/sst/protected/modules/yiiauth/components/Yiiauth.php (4)
+in /var/www/sst/protected/modules/yiiauth/controllers/DefaultController.php (10)
+2014/03/24 17:46:45 [error] [php] include(Yiiauth.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/sst/protected/components/Controller.php(7): spl_autoload_call()
+#1 /var/www/sst/framework/YiiBase.php(427): include()
+#2 unknown(0): autoload()
+#3 /var/www/sst/protected/controllers/SiteController.php(4): spl_autoload_call()
+#4 /var/www/sst/framework/web/CWebApplication.php(354): require()
+#5 /var/www/sst/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#6 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/index
+in /var/www/sst/protected/components/Controller.php (7)
+in /var/www/sst/protected/controllers/SiteController.php (4)
+in /var/www/sst/index.php (13)
+2014/03/24 17:47:01 [error] [php] include(LoginWidget.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/sst/framework/web/CWidgetFactory.php(146): import()
+#1 /var/www/sst/framework/web/CBaseController.php(146): CWidgetFactory->createWidget()
+#2 /var/www/sst/framework/web/CBaseController.php(172): SiteController->createWidget()
+#3 /var/www/sst/themes/flattab/views/site/index.php(14): SiteController->widget()
+#4 /var/www/sst/framework/web/CBaseController.php(126): require()
+#5 /var/www/sst/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#6 /var/www/sst/framework/web/CController.php(869): SiteController->renderFile()
+#7 /var/www/sst/framework/web/CController.php(782): SiteController->renderPartial()
+#8 /var/www/sst/protected/controllers/SiteController.php(32): SiteController->render()
+#9 /var/www/sst/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#12 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#13 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#14 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#15 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/index
+in /var/www/sst/themes/flattab/views/site/index.php (14)
+in /var/www/sst/protected/controllers/SiteController.php (32)
+in /var/www/sst/index.php (13)
+2014/03/24 17:57:36 [error] [exception.CException] exception 'CException' with message 'Alias "ext.widgets.hybridAuth.CHybridAuth" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/sst/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/sst/framework/YiiBase.php(196): YiiBase::import('ext.widgets.hyb...', true)
+#1 /var/www/sst/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /var/www/sst/framework/base/CModule.php(103): CModule->getComponent('hybridAuth')
+#3 /var/www/sst/themes/flattab/views/site/index.php(15): CModule->__get('hybridAuth')
+#4 /var/www/sst/framework/web/CBaseController.php(126): require('/var/www/sst/th...')
+#5 /var/www/sst/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/sst/th...', NULL, true)
+#6 /var/www/sst/framework/web/CController.php(869): CBaseController->renderFile('/var/www/sst/th...', NULL, true)
+#7 /var/www/sst/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#8 /var/www/sst/protected/controllers/SiteController.php(32): CController->render('index')
+#9 /var/www/sst/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#10 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/sst/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/sst/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('index')
+#14 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#15 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /var/www/sst/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/sst/site/index
+---
+2014/03/24 18:05:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/hybridauth/authenticate/provider/Facebook".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('user/hybridauth...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/user/hybridauth/authenticate/provider/Facebook
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 18:06:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/hybridauth/authenticate/provider/Facebook".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('user/hybridauth...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/user/hybridauth/authenticate/provider/Facebook
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:02:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'sst'' in /var/www/sst/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/sst/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /var/www/sst/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /var/www/sst/framework/base/CModule.php(387): CDbConnection->init()
+#3 /var/www/sst/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /var/www/sst/framework/gii/generators/model/ModelCode.php(60): CModule->__get('db')
+#5 /var/www/sst/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /var/www/sst/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /var/www/sst/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/sst/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/sst/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/sst/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model/index')
+#14 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#15 /var/www/sst/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/sst/gii/model/index
+HTTP_REFERER=http://localhost/sst/gii/default/index
+---
+2014/03/24 22:03:43 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sst.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in /var/www/sst/index.php (13)
+2014/03/24 22:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/buttons/google.png".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('images/buttons/...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/images/buttons/google.png
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/24 22:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/buttons/facebook.png".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('images/buttons/...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/images/buttons/facebook.png
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/24 22:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/buttons/twitter.png".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('images/buttons/...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/images/buttons/twitter.png
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/24 22:27:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/provider=google".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('login/provider=...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/login/provider=google
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/24 22:29:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/provider=google".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('login/provider=...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/login/provider=google
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/24 22:29:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/google.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:29:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/fac...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/facebook.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:29:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/twi...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/twitter.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/goo...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/google.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/twi...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/twitter.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:29:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/fac...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/facebook.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/twi...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/twitter.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:30:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/fac...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/facebook.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/fac...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/facebook.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/24 22:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in /var/www/sst/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/sst/framework/web/CController.php(270): CController->missingAction('images')
+#1 /var/www/sst/framework/web/CWebApplication.php(282): CController->run('images')
+#2 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('site/images/twi...')
+#3 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sst/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/sst/site/images/twitter.png
+HTTP_REFERER=http://localhost/sst/site/index
+---
+2014/03/25 22:17:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/provider=facebook".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('login/provider=...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/login/provider=facebook
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/25 22:19:27 [error] [php] Undefined variable: id (/var/www/sst/protected/controllers/SiteController.php:102)
+Stack trace:
+#0 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#3 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#4 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#5 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook/id/10
+in /var/www/sst/protected/controllers/SiteController.php (102)
+in /var/www/sst/index.php (13)
+2014/03/25 22:20:36 [error] [php] include(/var/www/sst/protected/extensions/components/HybridAuthIdentity.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:401)
+Stack trace:
+#0 /var/www/sst/protected/controllers/SiteController.php(111): spl_autoload_call()
+#1 unknown(0): SiteController->actionLogin()
+#2 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/controllers/SiteController.php (111)
+in /var/www/sst/index.php (13)
+2014/03/25 22:21:48 [error] [php] include(/var/www/sst/protected/extensions/components/HybridAuthIdentity.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:401)
+Stack trace:
+#0 /var/www/sst/protected/controllers/SiteController.php(111): spl_autoload_call()
+#1 unknown(0): SiteController->actionLogin()
+#2 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/controllers/SiteController.php (111)
+in /var/www/sst/index.php (13)
+2014/03/25 22:22:40 [error] [php] include(/var/www/sst/protected/extensions/components/HybridAuthIdentity.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:401)
+Stack trace:
+#0 /var/www/sst/protected/controllers/SiteController.php(111): spl_autoload_call()
+#1 unknown(0): SiteController->actionLogin()
+#2 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/controllers/SiteController.php (111)
+in /var/www/sst/index.php (13)
+2014/03/25 22:23:10 [error] [php] require_once(/var/www/sst/protected/extensions/HybridAuth/hybridauth-2.1.2/hybridauth/Hybrid/Auth.php): failed to open stream: Permission denied (/var/www/sst/protected/extensions/components/HybridAuthIdentity.php:32)
+Stack trace:
+#0 unknown(0): SiteController->actionLogin()
+#1 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#5 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/extensions/components/HybridAuthIdentity.php (32)
+in /var/www/sst/protected/extensions/components/HybridAuthIdentity.php (32)
+in /var/www/sst/protected/controllers/SiteController.php (111)
+2014/03/25 22:23:32 [error] [php] include(/var/www/sst/protected/extensions/components/HybridAuthIdentity.php): failed to open stream: No such file or directory (/var/www/sst/framework/YiiBase.php:401)
+Stack trace:
+#0 /var/www/sst/protected/controllers/SiteController.php(111): spl_autoload_call()
+#1 unknown(0): SiteController->actionLogin()
+#2 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#3 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/controllers/SiteController.php (111)
+in /var/www/sst/index.php (13)
+2014/03/25 22:23:39 [error] [php] require_once(/var/www/sst/protected/extensions/HybridAuth/hybridauth-2.1.2/hybridauth/Hybrid/Auth.php): failed to open stream: Permission denied (/var/www/sst/protected/extensions/components/HybridAuthIdentity.php:32)
+Stack trace:
+#0 unknown(0): SiteController->actionLogin()
+#1 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#5 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/extensions/components/HybridAuthIdentity.php (32)
+in /var/www/sst/protected/extensions/components/HybridAuthIdentity.php (32)
+in /var/www/sst/protected/controllers/SiteController.php (111)
+2014/03/25 22:24:04 [error] [php] require_once(/var/www/sst/protected/extensions/HybridAuth/hybridauth-2.1.2/hybridauth/Hybrid/Auth.php): failed to open stream: Permission denied (/var/www/sst/protected/extensions/components/HybridAuthIdentity.php:32)
+Stack trace:
+#0 unknown(0): SiteController->actionLogin()
+#1 /var/www/sst/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/sst/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/sst/framework/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/sst/framework/web/CController.php(286): SiteController->runAction()
+#5 /var/www/sst/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /var/www/sst/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/sst/index.php(13): CWebApplication->run()
+REQUEST_URI=/sst/site/login/provider/facebook
+in /var/www/sst/protected/extensions/components/HybridAuthIdentity.php (32)
+in /var/www/sst/protected/extensions/components/HybridAuthIdentity.php (32)
+in /var/www/sst/protected/controllers/SiteController.php (111)
+2014/03/27 22:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login/provider=facebook".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('login/provider=...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/login/provider=facebook
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/27 22:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hybridauth".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('hybridauth')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/hybridauth/?hauth.start=Facebook&hauth.time=1395939681
+---
+2014/03/27 22:31:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hybridauth".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('hybridauth')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/hybridauth/?hauth.start=Facebook&hauth.time=1395939691
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/27 22:31:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hybridauth".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('hybridauth')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/hybridauth/?hauth.start=Facebook&hauth.time=1395939693
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/27 22:32:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "hybridauth".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('hybridauth')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/hybridauth/?hauth.start=Facebook&hauth.time=1395939759
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/27 22:34:16 [error] [exception.CException] exception 'CException' with message 'Alias "hybridauth.HybridauthModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/sst/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/sst/framework/YiiBase.php(196): YiiBase::import('hybridauth.Hybr...', true)
+#1 /var/www/sst/framework/base/CModule.php(282): YiiBase::createComponent('hybridauth.Hybr...', 'hybridauth', NULL, Array)
+#2 /var/www/sst/framework/web/CWebApplication.php(337): CModule->getModule('hybridauth')
+#3 /var/www/sst/framework/web/CWebApplication.php(276): CWebApplication->createController('hybridauth')
+#4 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('hybridauth')
+#5 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#6 /var/www/sst/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/sst/hybridauth/?hauth.start=Facebook&hauth.time=1395939856
+HTTP_REFERER=http://localhost/sst/
+---
+2014/03/27 22:35:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendor".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('vendor')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/vendor
+---
+2014/03/27 22:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendor/hybridauth".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('vendor/hybridau...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/vendor/hybridauth/?hauth.start=Facebook&hauth.time=1395940230
+---
+2014/04/01 21:43:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/twitter.png".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('images/twitter....')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/images/twitter.png
+HTTP_REFERER=http://localhost/sst/
+---
+2014/04/01 21:43:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/google.png".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('images/google.p...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/images/google.png
+HTTP_REFERER=http://localhost/sst/
+---
+2014/04/01 21:43:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/facebook.png".' in /var/www/sst/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/sst/framework/web/CWebApplication.php(141): CWebApplication->runController('images/facebook...')
+#1 /var/www/sst/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sst/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sst/images/facebook.png
+HTTP_REFERER=http://localhost/sst/
+---
